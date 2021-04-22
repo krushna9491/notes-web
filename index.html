@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>notes web</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="body.css">
+</head>
+
+<body>
+  <header id="navBar">
+    <div id="left">
+      <h2 class="headElement left">Notes web</h2>
+      <a class="headElement left" href="index.html">Home</a>
+    </div>
+    <h2 id="sideBtn"> &#9776; </h2>
+    <div id="right">
+      <input class="headElement" type="text" placeholder="search" name="search" id="search">
+      <button class="headElement" id="searchBtn">search</button>
+    </div>
+    <p id="owner">made with &hearts; by krushna</p>
+  </header>
+  <!--the main container-->
+  <div id="container">
+    <h2 style="margin-left: 15px;">welcome to krushna's notes</h2>
+    <!--the first box of the container  -->
+    <div id="firstContainer">
+      <h2>Add tilte</h2>
+      <!--<textarea name="text" id="titleText" cols="30" rows="2"></textarea>-->
+      <input name="text" id="titleText" placeholder="Tilte"></input>
+      <h2>Add a note</h2>
+      <textarea name="text" id="textarea" cols="30" rows="5" placeholder="Add your note here"></textarea>
+      <button class="addNoteBtn" id="addNoteBtn">Add Note</button>
+    </div>
+    <hr style="width: 97%;">
+    <h2 style="margin: 15px 20px;">Your Notes</h2>
+    <hr style="width: 97%;">
+    <div id="notesContainer">
+    </div>
+  </div>
+</body>
+<script src="header.js"></script>
+<script src="main.js"></script>
+
+</html>

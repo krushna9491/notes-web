@@ -1,0 +1,112 @@
+body{
+    background-image: linear-gradient(to bottom right,#4CA9DF,#383ebd);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+
+}
+#container{
+    max-width: 730px;
+    width: 100%;
+    margin: 5px auto;
+    
+}
+#firstContainer{
+    border: 1px solid rgba(255, 255, 255, 0.233);
+    margin: 10px;
+    padding: 5px 15px 5px 10px;
+}
+#textarea,#titleText{
+    width: 95%;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.89);
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 10px;
+}
+#titleText{
+  font-weight: 500;
+}
+#titleText:hover,textarea:hover{
+    box-shadow: 2px 2px 4px;
+}
+#addNoteBtn{
+    background-image: linear-gradient(to right,#f6d365 0%,#fda085 51%,#f6d365 100%);
+    background-size: 200% auto;
+    font-weight: bold;
+    border: none;
+    color: rgb(27, 27, 27);
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+#addNoteBtn:hover{
+    background-position: right center;
+    color: black;
+}
+hr{
+    border-bottom: none;
+    border: 1px solid rgba(255, 255, 255, 0.137);
+}
+#innerHtml{
+    background-image: url("back 2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 15px;
+    line-height: 1.5;
+    margin: 0 10px;
+
+}
+#noteCard{
+    border: 1px solid rgba(255, 255, 255, 0.233);
+    background-color: rgba(255, 255, 255, 0.199);
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+#nodeCardTitle{
+    background-color: rgba(255, 255, 255, 0.103);
+    padding: 5px;
+    border-radius: 10px;
+}
+#date{
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.644);
+}
+@media screen and (max-width: 480px){
+    #noteCard{
+        width: 230px;
+    }
+    #notesContainer{
+        min-height: 430px;
+    }
+}
+h3{
+    margin: 7px 0;
+}
+.deleteNoteBtn{
+    background-color: rgb(99, 248, 99);
+    background-image: linear-gradient(to right,#fda085 0%,#f6d365 51%,#fda085 100%);
+    background-size: 200% auto;
+    border: none;
+    padding: 6px 12px;
+    font-weight: bold;
+    transition:  0.5s;
+    border-radius: 50px;
+}
+.deleteNoteBtn:hover{
+    background-color: gray;
+    background-position: right center;
+    
+
+}
+#notesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 250px;
+
+}
